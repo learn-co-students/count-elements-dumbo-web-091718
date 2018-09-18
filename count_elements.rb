@@ -1,4 +1,12 @@
 def count_elements(array)
-  # code goes here
+  hsh = {}
+  array.each do |e|
+    if hsh.keys.include?(e)
+      hsh[e] += 1
+    else
+      hsh[e] = 1
+    end
+  end 
+  hsh
 end
- 
+
